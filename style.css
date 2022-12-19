@@ -1,0 +1,159 @@
+body{
+    background-color: #EBFBFB;
+    font-family: "Roboto", sans-serif;
+}
+
+input{
+    font-family: "Roboto", sans-serif;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#container{
+    width: 1266px;
+    margin: 0 auto;
+}
+
+
+/* welcome-block */
+header{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-links{
+    align-items: center;
+    display: flex;
+}
+
+#header-links a{
+    font-size: 20px;
+    font-weight: 500;
+    color: #333333;
+    margin-left: 100px;
+}
+
+#header-links a:nth-child(1){
+    margin-left: 0px;
+}
+
+#header-logo{
+    display: flex;
+}
+
+#header-logo img{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#header-logo p{
+    color: #333333;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#header-logo p:nth-child(3){
+    color: #364D89;
+}
+
+#cover{
+    margin-top: 300px;
+    margin-bottom: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cover p{
+    font-family: "Roboto Condensed";
+    color: #333333;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#search-ticket-form{
+    width: 950px;
+    margin: 0 auto;
+}
+
+#search-ticket-flex{
+    margin-bottom: 115px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-element{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-element p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #919191;
+}
+
+.search-element input{
+    font-size: 20px;
+    font-weight: 500;
+    color: #919191;
+    text-align:center;
+    width: 195px;
+    height: 80px;
+    border-radius: 10px;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.search-element img{
+    width: 100px;
+    z-index: 1;
+    left: 39%;
+    top: 60%;
+    position: absolute;
+}
+
+.search-sub-element.expandned{
+    margin-right: 53px;
+}
+
+#search-ticket-button{
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    background-color: #3F6CDD;
+    width: 250px;
+    height: 90px;
+}
+/* /welcome-block */
+
+
+/* information-block */
+#information-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.information-item{
+    width: 320px;
+    height: 390px;
+    border: solid 2px;
+    border-radius: 10px;
+}
+/* /information-block */
+
+
+/* footer-block */
+footer{
+    background-color: #3F6CDD;
+    display: flex;
+}
+/* /footer-block */
