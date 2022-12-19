@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet' type='text/css'>
     <link href='style.css' rel='stylesheet' type='text/css'>
-    <title>Лаба</title>
+    <title>Ж/Д БИЛЕТЫ</title>
 </head>
 <body>
-    <div id="container">
+    <div class="container">
         <div id="welcome-block">
             <header>
                 <div id="header-logo">
@@ -27,7 +30,7 @@
                 <p>Купить билеты на  поезда РЖД</p>
                 <img src="images/train.png" alt="">
             </div>
-            <div id="search-ticket-form">
+            <form id="search-ticket-form">
                 <div id="search-ticket-flex">
                     <div class="search-element">
                         <img src="images/arrow_right.png" alt="">
@@ -54,11 +57,11 @@
                     </div>
                 </div>
                 <button type="button" id="search-ticket-button" onclick="">Искать</button>
-            </div>
+            </form>
         </div>
 
         <div id="information-block">
-            <h1>Информация о бронировании билетов на поезд по России</h1>
+            <h1 class="title">Информация о бронировании билетов на поезд по России</h1>
             <p>Бронирование и покупка ж/д билетов без касс и очередей </p>
             <div id="information-flex">
                 <div class="information-item">
@@ -67,159 +70,150 @@
                         e-mail придет информация о заказе с электронным билетом.</p>
                 </div>
                 <div class="information-item">
-                    <h2>Продажа билетов онлайн</h2>
-                    <p>Купить билет на поезд можно всего за 2 минуты. После оплаты вам на телефон и
-                        e-mail придет информация о заказе с электронным билетом.</p>
+                    <h2>Электронная регистрация</h2>
+                    <p>Для посадки на поезд понадобится только паспорт и электронный билет. Его достаточно показать на экране вашего устройства.</p>
                 </div>
                 <div class="information-item">
-                    <h2>Продажа билетов онлайн</h2>
-                    <p>Купить билет на поезд можно всего за 2 минуты. После оплаты вам на телефон и
-                        e-mail придет информация о заказе с электронным билетом.</p>
+                    <h2>Ценим Ваш комфорт</h2>
+                    <p>На жд-билеты.ру можно выбрать тип купе, узнать пол попутчиков и о дополнительных услугах поезда.</p>
                 </div>
             </div>
         </div>
 
-        
-
         <div id="news-block">
-            <h1>Акции и новости</h1>
+            <h1 class="title">Акции и новости</h1>
             <div id="news-flex">
                 <div id="promotion-section">
-                    <div class="p-item">
+                    <a href="#" class="p-item">
                         <p>РЖД снова обратились в совет ЕС по вопросу отмены санкций</p>
                         <img src="images/small-arrow-right.png" alt="">
-                    </div>
-                    <div class="p-item">
-                        <p>РЖД снова обратились в совет ЕС по вопросу отмены санкций</p>
+                    </a>
+                    <a href="#" class="p-item">
+                        <p>РЖД до 2025 года потратят 67,5 млрд руб. на закупку поездов “Ласточка”</p>
                         <img src="images/small-arrow-right.png" alt="">
-                    </div>
-                    <div class="p-item">
-                        <p>РЖД снова обратились в совет ЕС по вопросу отмены санкций</p>
+                    </a>
+                    <a href="#" class="p-item">
+                        <p>РЖД предложили выбрать дизайн нового высокоскоростного поезда</p>
                         <img src="images/small-arrow-right.png" alt="">
-                    </div>
+                    </a>
                 </div>
-                <div id="subscribe-from-section">
+                <div id="subscribe-form-section">
                     <p>Подпишитесь на нашу рассылку, чтобы не пропустить скидки на нужное направление и быть в курсе всех последних событий</p>
-                    <input type="text">
+                    <form id="subscribe-form">
+                        <input type="text" placeholder="E-mail">
+                        <button>Подписаться </button>
+                    </form>
                 </div>
             </div>
         </div>
 
         <div id="popular-destinations-block">
-            <h1>Популярные ж/д направления</h1>
+            <h1 class="title">Популярные ж/д направления</h1>
 
-            <div class="destinations">
-                <div class="d-item">
+            <div id="destinations">
+                <a href="#" class="d-item">
                     <p>Москва - Санкт-Петербург</p>
                     <img src="images/small-arrow-right.png" alt="">
-                </div>
-                <div class="d-item">
-                    <p>Москва - Санкт-Петербург</p>
+                </a>
+                <a href="#" class="d-item">
+                    <p>Воронеж - Москва</p>
                     <img src="images/small-arrow-right.png" alt="">
-                </div>
-                <div class="d-item">
-                    <p>Москва - Санкт-Петербург</p>
+                </a>
+                <a href="#" class="d-item">
+                    <p>Москва -  Воронеж</p>
                     <img src="images/small-arrow-right.png" alt="">
-                </div>
-                <div class="d-item">
-                    <p>Москва - Санкт-Петербург</p>
+                </a>
+                <a href="#" class="d-item">
+                    <p>Санкт-Петербург - Москва</p>
                     <img src="images/small-arrow-right.png" alt="">
-                </div>
-                <div class="d-item">
-                    <p>Москва - Санкт-Петербург</p>
+                </a>
+                <a href="#" class="d-item">
+                    <p>Москва - Нижний Новгород</p>
                     <img src="images/small-arrow-right.png" alt="">
-                </div>
-                <div class="d-item">
-                    <p>Москва - Санкт-Петербург</p>
+                </a>
+                <a href="#" class="d-item">
+                    <p>Москва - Брянск</p>
                     <img src="images/small-arrow-right.png" alt="">
-                </div>
-                <div class="d-item">
-                    <p>Москва - Санкт-Петербург</p>
+                </a>
+                <a href="#" class="d-item">
+                    <p>Нижний Новгород - Москва</p>
                     <img src="images/small-arrow-right.png" alt="">
-                </div>
-                <div class="d-item">
-                    <p>Москва - Санкт-Петербург</p>
+                </a>
+                <a href="#" class="d-item">
+                    <p>Самара - Москва</p>
                     <img src="images/small-arrow-right.png" alt="">
-                </div>
+                </a>
             </div>
         </div>
 
         <div id="frequent-questions-block">
-            <h1>Частые вопросы о ж/д билетах</h1>
+            <h1 class="title">Частые вопросы о ж/д билетах</h1>
             <div id="frequent-questions">
-                <div class="f-question">
+                <div class="separator"></div>
+                <a href="#" class="f-question">
                     <p>Как вернуть (сдать) билеты?</p>
                     <img src="images/arrow_bottom.png" alt="">
-                </div>
-                <div class="f-question">
-                    <p>Как вернуть (сдать) билеты?</p>
+                </a>
+                <div class="separator"></div>
+                <a href="#" class="f-question">
+                    <p>Как перевезти животное в поезде?</p>
                     <img src="images/arrow_bottom.png" alt="">
-                </div>
-                <div class="f-question">
-                    <p>Как вернуть (сдать) билеты?</p>
+                </a>
+                <div class="separator"></div>
+                <a href="#" class="f-question">
+                    <p>Что делать, если ошибся при вводе данных пассажира?</p>
                     <img src="images/arrow_bottom.png" alt="">
-                </div>
-                <div class="f-question">
-                    <p>Как вернуть (сдать) билеты?</p>
+                </a>
+                <div class="separator"></div>
+                <a href="#" class="f-question">
+                    <p>Что нужно, чтобы сесть в поезд?</p>
                     <img src="images/arrow_bottom.png" alt="">
-                </div>
+                </a>
+                <div class="separator"></div>
             </div>
         </div>
 
         <div id="payment-block">
-            <h1>Принимаем к оплате</h1>
+            <h1 class="title">Принимаем к оплате</h1>
             <p>Мы надежно защищаем введенные вами данные, они передаются только по защищенному каналу. Оплата банковскими картами осуществляется процессинговыми центрами, которые соответствуют новейшим стандартам безопасности.</p>
+            <img src="images/payments.png" alt="">
         </div>
-        <img src="images/payments.png" alt="">
     </div>
 
     <footer>
-        <div class="footer-section">
-            <h2>Клиентам</h2>
-            <div class="f-links">
-                <a href="#">Частые вопросы</a>
-                <a href="#">Частые вопросы</a>
-                <a href="#">Частые вопросы</a>
-                <a href="#">Частые вопросы</a>
-                <a href="#">Частые вопросы</a>
-                <a href="#">Частые вопросы</a>
-                <a href="#">Частые вопросы</a>
+        <div class="container">
+            <div class="footer-section">
+                <h2>Клиентам</h2>
+                <div class="f-links">
+                    <a href="#">Частые вопросы</a>
+                    <a href="#">Контакты жд-билеты.ру</a>
+                    <a href="#">Персоналные предложения</a>
+                    <a href="#">Бонусы</a>
+                    <a href="#">Купить в рассрочку</a>
+                    <a href="#">Оферта</a>
+                </div>
             </div>
-        </div>
-        <div class="footer-section">
-            <h2>Клиентам</h2>
-            <div class="f-links">
-                <a href="#">Частые вопросы</a>
-                <a href="#">Частые вопросы</a>
-                <a href="#">Частые вопросы</a>
-                <a href="#">Частые вопросы</a>
-                <a href="#">Частые вопросы</a>
-                <a href="#">Частые вопросы</a>
-                <a href="#">Частые вопросы</a>
+            <div class="footer-section">
+                <h2>Бизнесу</h2>
+                <div class="f-links">
+                    <a href="#">Организация командировок</a>
+                    <a href="#">Агентам</a>
+                    <a href="#">Отелям</a>
+                    <a href="#">Групповые перевозки</a>
+                </div>
             </div>
-        </div>
-        <div class="footer-section">
-            <h2>Клиентам</h2>
-            <div class="f-links">
-                <a href="#">Частые вопросы</a>
-                <a href="#">Частые вопросы</a>
-                <a href="#">Частые вопросы</a>
-                <a href="#">Частые вопросы</a>
-                <a href="#">Частые вопросы</a>
-                <a href="#">Частые вопросы</a>
-                <a href="#">Частые вопросы</a>
+            <div class="footer-section">
+                <h2>Сотрудничество</h2>
+                <div class="f-links">
+                    <a href="#">Рекламодателям</a>
+                    <a href="#">Блогерам</a>
+                </div>
             </div>
-        </div>
-        <div class="footer-section">
-            <h2>Клиентам</h2>
-            <div class="f-links">
-                <a href="#">Частые вопросы</a>
-                <a href="#">Частые вопросы</a>
-                <a href="#">Частые вопросы</a>
-                <a href="#">Частые вопросы</a>
-                <a href="#">Частые вопросы</a>
-                <a href="#">Частые вопросы</a>
-                <a href="#">Частые вопросы</a>
+            <div class="footer-section">
+                <h2>Проекты</h2>
+                <div class="f-links">
+                    <a href="#">Все проекты</a>
+                </div>
             </div>
         </div>
     </footer>

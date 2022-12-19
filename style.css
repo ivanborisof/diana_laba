@@ -3,21 +3,58 @@ body{
     font-family: "Roboto", sans-serif;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
 input{
     font-family: "Roboto", sans-serif;
+}
+
+p, h2{
+    margin: 0;
+    padding: 0;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
 textarea:focus, input:focus{
     outline: none;
 }
 
-#container{
+.container{
     width: 1266px;
     margin: 0 auto;
 }
 
+.title{
+    font-family: 'Roboto Condensed';
+    margin: 0;
+    color: #364D89;
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 100px;
+}
+
 
 /* welcome-block */
+#welcome-block{
+    margin-bottom: 345px;
+}
+
 header{
     margin-top: 120px;
     display: flex;
@@ -30,10 +67,15 @@ header{
 }
 
 #header-links a{
+    text-decoration: underline;
     font-size: 20px;
     font-weight: 500;
     color: #333333;
     margin-left: 100px;
+}
+
+#header-links a:hover{
+    color: #3F6CDD;
 }
 
 #header-links a:nth-child(1){
@@ -41,6 +83,7 @@ header{
 }
 
 #header-logo{
+    align-items: center;
     display: flex;
 }
 
@@ -92,6 +135,7 @@ header{
 }
 
 .search-element p{
+    margin-bottom: 20px;
     font-size: 16px;
     font-weight: 500;
     color: #919191;
@@ -113,7 +157,7 @@ header{
     width: 100px;
     z-index: 1;
     left: 39%;
-    top: 60%;
+    top: 57%;
     position: absolute;
 }
 
@@ -137,6 +181,26 @@ header{
 
 
 /* information-block */
+#information-block{
+    margin-bottom: 366px;
+}
+
+#information-block > p{
+    font-size: 24px;
+    font-weight: 600;
+    color: #919191;
+}
+
+#information-block > p{
+    text-align: center;
+    margin-top: 61px;
+    margin-bottom: 106px;
+}
+
+#information-block > h1{
+    text-align: center;
+}
+
 #information-flex{
     display: flex;
     justify-content: space-between;
@@ -144,16 +208,258 @@ header{
 
 .information-item{
     width: 320px;
-    height: 390px;
+    height: 388px;
     border: solid 2px;
     border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.information-item h2{
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 19px;
+    text-align: center;
+}
+
+.information-item p{
+    width: 250px;
+    margin: 0 auto;
+    line-height: 43px;
+    font-weight: 400;
+    font-size: 20px;
 }
 /* /information-block */
 
 
+/* news-block */
+.p-item{
+    color: #333333;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid;
+}
+
+.p-item p{
+    margin-right: 20px;
+    line-height: 43px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    font-family: 'Roboto Condensed';
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.p-item:nth-child(2) p{
+    text-decoration: underline;
+}
+
+.p-item img{
+    width: 23px;
+    height: 25px;
+}
+
+#news-flex{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#promotion-section{
+    width: 400px;
+    margin-right: 173px;
+}
+
+#news-block{
+    margin-bottom: 345px;
+}
+
+#subscribe-form-section p{
+    width: 496px;
+    font-weight: 500;
+    font-size: 22px;
+    color: #757575;
+    line-height: 43px;
+    margin-bottom: 60px;
+}
+
+#subscribe-form input{
+    border: none;
+    width: 280px;
+    height: 60px;
+    border-radius: 10px 0 0 10px;
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 20px;
+    color: #757575;
+    padding-left:20px;
+}
+
+#subscribe-form button{
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: #3F6CDD;
+    width: 196px;
+    height: 66px;
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 43px;
+    color: #FFFFFF;
+}
+
+#subscribe-form{
+    position: relative;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#subscribe-form-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* /news-block */
+
+/* popular-destinations-block */
+#popular-destinations-block{
+    margin-bottom: 340px;
+}
+
+#popular-destinations-block > h1{
+    margin-bottom: 105px;
+}
+
+.d-item{
+    width: 410px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.d-item p{
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+}
+
+#destinations{
+    display: grid;
+    gap: 44px 128px;
+    grid-template-columns: 410px 410px;
+    justify-content: center;
+}
+
+.d-item img{
+    width: 15px;
+    height: 20px;
+}
+
+.d-item p{
+    margin-right: 70px;
+}
+/* /popular-destinations-block */
+
+/* frequent-questions-block */
+#frequent-questions-block{
+    margin-bottom: 340px;
+}
+
+#frequent-questions-block h1{
+    margin-bottom: 108px;
+}
+
+.f-question{
+    width: 944px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.f-question p{
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    color: #333333;
+}
+
+.f-question img{
+    width: 23px;
+    height: 25px;
+}
+
+.separator{
+    height: 2px;
+    background-color: #757575;
+}
+/* /frequent-questions-block */
+
+/* payment-block */
+#payment-block{
+    margin-bottom: 345px;
+}
+
+#payment-block h1{
+    margin-bottom: 105px;
+}
+
+#payment-block p{
+    width: 995px;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 43px;
+    padding-bottom: 105px;
+}
+
+#payment-block img{
+   display: block;
+   margin: 0 auto;
+}
+/* /payment-block */
+
 /* footer-block */
 footer{
     background-color: #3F6CDD;
+    padding-bottom: 150px;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h2{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 22px;
+    color: #333333;
+    margin-top: 91px;
+    margin-bottom: 50px;
+}
+
+footer a{
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    text-decoration: none;
+}
+
+.f-links{
+    flex-direction: column;
     display: flex;
 }
 /* /footer-block */
